@@ -11,12 +11,12 @@ import useAuthContext from '../hooks/useAuthContext'
 
 const LoginPage = () => {
   const toast = useToast()
-  const [isLoading, setIsLoading] = useState(false)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const { loginAction } = useAuthContext()
   const [isDirty, setIsDirty] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
   const [errors, setErrors] = useState({ ok: true })
-  const [password, setPassword] = useState('Vhnq2tsx+')
-  const [email, setEmail] = useState('kazragore96@gmail.com')
 
   useEffect(() => {
     if (isDirty) {

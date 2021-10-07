@@ -14,9 +14,9 @@ const RegisterPage = () => {
   const [isDirty, setIsDirty] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [errors, setErrors] = useState({ ok: true })
-  const [email, setEmail] = useState('kazragore96@gmail.com')
-  const [password, setPassword] = useState('Vhnq2tsx+')
-  const [confirmPassword, setConfirmPassword] = useState('Vhnq2tsx+')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
 
   useEffect(() => {
     if (isDirty) {
